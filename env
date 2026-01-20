@@ -1,0 +1,24 @@
+READ ME
+
+NODE_ENV=development
+PORT=8000
+
+MONGO_URI=mongodb+srv://rajmhatre:rajmhatre1898@nodejs-auth-cluster.ugwuiaj.mongodb.net/
+
+JWT_ACCESS_SECRET=VEHlNvJBf1u7F7wOYsi5G8KDzJO1JikyOCU36F85XMVy79aYYp
+JWT_REFRESH_SECRET=C43F4Fs9uL0k9YDsYGjarz8wYHrTjVW7qmejYl82aFclijHReU
+JWT_EMAIL_SECRET=EzxhN66TbUHBwR4kazQP1M2BaWGwdd7r6pokoXHdcIZF0CzxNG
+
+SMTP_HOST=sandbox.smtp.mailtrap.io
+SMTP_PORT=2525
+SMTP_USER=dcd7bde6473603
+SMTP_PASS=0c126d53e47178
+EMAIL_FROM="MY App <no-reply@myApp.com>
+
+APP_URL=http://localhost:8000
+
+GOOGLE_CLIENT_ID
+GOOGLE_CLIENT_SECRET
+GOOGLE_REDIRECT_URI=http://localhost:8000/api/auth/google/callback
+
+
