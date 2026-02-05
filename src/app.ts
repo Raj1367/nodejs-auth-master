@@ -12,7 +12,7 @@ const allowedOrigins = [
 ];
 
 app.use(express.json());
-app.use(cors({origin: allowedOrigins, credentials: true}));
+app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(cookieParser());
 
 // app.get("/health", (req, res) => {
@@ -32,6 +32,6 @@ app.use(cookieParser());
 // });
 
 app.use("/api", Authrouter);
-app.use("/api",UserRouter)
+app.use("/api", UserRouter);
 
 export default app;
