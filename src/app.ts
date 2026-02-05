@@ -15,21 +15,21 @@ app.use(express.json());
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(cookieParser());
 
-// app.get("/health", (req, res) => {
-//   try {
-//     res.status(200).json({
-//       success: true,
-//       error: false,
-//       message: "ok",
-//     });
-//   } catch (error: any) {
-//     res.status(500).json({
-//       success: false,
-//       error: true,
-//       message: error.message || error || "Internal server error",
-//     });
-//   }
-// });
+app.get("/health", (req, res) => {
+  try {
+    res.status(200).json({
+      success: true,
+      error: false,
+      message: "ok",
+    });
+  } catch (error: any) {
+    res.status(500).json({
+      success: false,
+      error: true,
+      message: error.message || error || "Internal server error",
+    });
+  }
+});
 
 app.use("/api", Authrouter);
 app.use("/api", UserRouter);
