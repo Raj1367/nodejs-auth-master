@@ -52,7 +52,7 @@ export const resetPasswordController = async (req: Request, res: Response) => {
 
     const isSamePassword = await verifyPassword(
       password,
-      existingUser.passwordHash
+      existingUser.passwordHash as string
     );
 
     if (isSamePassword) {
